@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groover's Nook | Bookstore</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <section class="hero">
+        <p class="eyebrow">BOOKS · GOOD FOOD · SLOWER DAYS</p>
+        <h1>Welcome to<br>Groover's Nook</h1>
+        <p>A little corner for curious minds, cozy reads, and unhurried moments.</p>
+        <button class="cta-btn" type="button">
+            See book list <span aria-hidden="true">→</span>
+        </button>
+    </section>
+
+    <section class="book-list" id="book-list">
+        <div class="section-heading">
+            <h2>Our Books</h2>
+            <p>Discover stories, ideas and adventures from around the world.</p>
+        </div>
+
+        <form class="search-bar">
+            <input
+                type="search"
+                id="book-search"
+                placeholder="Search by title, author or keyword..."
+                aria-label="Search books"
+            >
+            <button type="submit">Search</button>
+        </form>
+
+        <p class="status" aria-live="polite"></p>
+        <ul class="books"></ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
